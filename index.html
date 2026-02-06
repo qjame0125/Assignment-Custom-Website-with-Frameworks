@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel ="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid p-3 bg-primary text-white text-center">
+    <h1>My Bootstrap Art Page</h1>
+</div>
+<!-- access Fun Facts -->
+<nav id="funFactNav" class="navbar bg-light px-3 mb-3">
+    <ul class="nav nav-pills">
+    <li class="nav-item">
+    <a class="nav-link" href="#creature">Creature Fact</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#spiderpunk">SpiderPunk Fact</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#tiger">Tiger  Fact</a>
+    </li>
+    </ul>
+</nav>
+<div
+    data-bs-spy="scroll"
+    data-bs-target="#funFactNav"
+    data-bs-offset="0"
+    class="card-title"
+    tabindex="0">
+
+</div>
+<!--Slide Show-->>
+<section id="carouselSlides" class="carousel slide" data-bs-ride="carousel" class ="d-flex justify-content-between">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselSlides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselSlides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselSlides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner"  class="card" style="width: 18rem;" class="column">
+        <div  class="carousel-item active" class="creature-pic">
+            <img src="images/creature-art.png" class="card-img-top"class="d-block w-98">
+            <div class="card-body">
+        <h5 class="card-title" id = "creature">Creature Fun Fact</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus blanditiis ratione eos cupiditate ipsa ipsum omnis, molestias quaerat cum magni? Culpa blanditiis quam atque numquam ratione dolore, esse doloremque! Laboriosam?</p>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="carousel-item"   class = "column"> 
+        <div class="card mx-auto" style="width: 18rem;"class ="spider-pic">
+            <img src="images/spiderpunk-art.png"  class="card-img-top d-block w-100">
+        <div class="card-body">
+        <h5 class="card-title" id ="spiderpunk">SpiderPunk Fun Fact</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus blanditiis ratione eos cupiditate ipsa ipsum omnis, molestias quaerat cum magni? Culpa blanditiis quam atque numquam ratione dolore, esse doloremque! Laboriosam?</p>
+        </div>
+        </div>
+        
+    </div> 
+    <div class="tiger-box">
+        <div class="carousel-item" class="card" style="width: 18rem;"  class="tiger-pic">
+            <img src = "images/tiger-art.png" class="d-block w-98">
+        <div class="card-body">
+        <h5 class="card-title" id="tiger">Tiger Fun Fact</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus blanditiis ratione eos cupiditate ipsa ipsum omnis, molestias quaerat cum magni? Culpa blanditiis quam atque numquam ratione dolore, esse doloremque! Laboriosam?</p>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-Sides" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-Sides" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+</section>
+<section  class="modal" tabindex="-1" class="d-flex justify-content-center align-items-center ">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">Art project</h5>
+        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#artModal">
+        Open Modal
+</button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi totam nihil ab suscipit quos officiis at, a aut odio corporis ex, laboriosam earum quisquam asperiores veniam, tempore nemo necessitatibus?</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+    </div>
+</div>
+</section>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Creature-details
+    </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex exercitationem ut et quae incidunt corporis odit vero aspernatur! Distinctio tempore ex facilis optio voluptas quaerat natus quam libero dolorum!</strong> 
+    </div>
+    </div>
+    </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        SpiderPunk-details
+    </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+        <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quis ea corporis ullam inventore tenetur excepturi amet. Ipsum dicta similique ipsam odit voluptatum accusamus quos dolorum iusto? Quidem, voluptatum debitis.</strong> 
+    </div>
+    </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Tiger-details
+    </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quo voluptatum laborum provident dolor alias eligendi, et vitae deleniti veritatis perspiciatis molestias animi ipsam non iusto nisi expedita corporis eaque!</strong> 
+    </div>
+    </div>
+</div>
+</div>
+    
+</div>
+</body>
+</html>

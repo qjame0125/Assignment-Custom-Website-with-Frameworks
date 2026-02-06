@@ -1,0 +1,32 @@
+.p1{
+    display: flex;
+    flex-direction: column;
+
+}
+.p2{
+    display: flex;
+    flex-direction: column;
+}
+.p3{
+    display: flex;
+    flex-direction: column;
+}
+.tiger-box{
+    display: flex;
+    flex-direction: column;
+    
+}
+.tiger-pic{
+    display: flex;
+    justify-content: center;
+}
+.spider-pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.creature-pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
