@@ -20,7 +20,7 @@ The **accordion** was the easiest component to implement.
 
 ## How Bootstrap Improved the Code
 Using Bootstrap significantly improved the project in several ways:
-- **Rapid styling:** Most layout, spacing, and alignment was handled with utility classes, reducing the need for verbose custom CSS.
+- **Rapid styling:** Most layout, spacing, and alignment was handled with utility classes, reducing the need for custom CSS.
 - **Responsive design:** Components automatically adapted to different screen sizes with minimal effort.
 - **Prebuilt components:** Carousel, modal, and accordion functionalities were implemented without writing custom JavaScript, saving time and avoiding potential bugs.
 
